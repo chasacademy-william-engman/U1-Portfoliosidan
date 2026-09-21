@@ -1,0 +1,44 @@
+.hero-title {
+    margin-top: 100px;
+}
+
+.hero-title .gradient-text {
+  background: linear-gradient(
+    90deg,
+    #13b0f5 0%,
+    #13b0f5 60%,
+    #7b61ff 100%,
+    #e70faa 100%
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero {
+    margin-top: 100px;
+}
+
+.hero-text {
+    width: 50%;
+    color: var(--color-dark)
+}
+
+.logo-image {
+  width: 96%;
+  padding: 4px;
+  border-radius: 50%;
+  background: var(--gradient-360);
+  margin-top: 20px;
+
+  img {
+        width: 100%;
+        border-radius: 50%;
+        display: block;
+    }
+}
+
+
