@@ -18,10 +18,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-.hero {
-    margin-top: 100px;
-}
-
 .hero-text {
     width: 50%;
     color: var(--color-dark)

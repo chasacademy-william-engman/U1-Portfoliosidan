@@ -1,0 +1,21 @@
+address {
+  font-style: normal;
+  text-align: center;
+}
+
+.title-address {
+    margin: 90px 0px 15px;
+    font-size: 15px;
+}
+
+.gradient {
+    font-weight: 700;
+    font-size: 19px;
+
+    background: var(--gradient-heading);
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
