@@ -1,3 +1,11 @@
+.mobile {
+    display: block;
+}
+
+.desktop {
+    display: none;
+}
+
 p {
     padding: 10px 0px 25px 0px;
 }
@@ -13,6 +21,44 @@ h2 {
     
     img {
         width: 100%;
+        max-width: 100px;
+    }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+    .mobile {
+        display: none;
     }
 
+    .desktop {
+        flex: 1;
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+
+    main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title-section {
+        align-self: center;
+    }
+    
+    .tech-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 35px;
+    }
+
+    .icon {
+        box-sizing: border-box;
+        max-width: 105px;
+
+        p {
+            padding-bottom: 5px;
+            text-align: center;
+        }
+    }
 }
