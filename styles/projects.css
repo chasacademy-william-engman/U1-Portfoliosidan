@@ -1,0 +1,45 @@
+h2 {
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+p {
+    font-size: 12px;
+}
+
+.tech-stack {
+    color: black;
+    padding: 15px 0px;
+}
+
+section a {
+    text-decoration: underline;
+    font-size: 12px;
+
+    img {
+        width: 12px;
+        padding-right: 6px;
+    }
+}
+
+.project-card {
+    box-shadow: 5px 10px 10px 0px rgb(201, 201, 201);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.card-logo {
+    width: 100%;
+    object-fit: cover;
+    height: 325px;
+}
+
+.info {
+    padding: 15px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}

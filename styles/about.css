@@ -2,6 +2,10 @@
     padding-top: 25px;
 }
 
+h2 {
+    padding-bottom: 25px;
+}
+
 .career {
     display: grid;
     grid-template-columns: 1fr auto;
