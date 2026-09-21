@@ -1,0 +1,18 @@
+p {
+    padding: 10px 0px 25px 0px;
+}
+
+h2 {
+    padding-bottom: 25px;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    
+    img {
+        width: 100%;
+    }
+
+}
