@@ -22,7 +22,8 @@
   --color-button-success: #d7ffe0;
 
   /* Layout */
-  --page-padding: 24px;
+  --mobile-page-padding: 24px;
+  --desktop-page-padding: 30px 100px;
   --margin-nav-to-title: 25px 0px;
 
   /* Gradients */
@@ -35,6 +36,8 @@
   /* Typography */
   --nav-fontsize: 22px;
 }
+
+/* Mobile styles */
 
 body {
   min-height: 100vh;
@@ -69,8 +72,10 @@ p {
 }
 
 .container {
-    margin: var(--page-padding);
+    margin: var(--mobile-page-padding);
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -110,7 +115,11 @@ footer {
     -webkit-text-fill-color: transparent;
 }
 
-.menu {
+.desktop-menu {
+  display: none;
+}
+
+.mobile-menu {
   grid-column: 2;
   width: 100%;
 }
@@ -154,4 +163,54 @@ nav ul {
     img {
         width: 25px;
     }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+  /* Nav */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .desktop-menu nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .desktop-menu .socials {
+    display: flex;
+    gap: 15px;
+    margin-top: 0;
+  }
+
+  /* Text */
+  h1, 
+  h2
+  {
+    font-size: 30px;
+    line-height: 1.3;
+    color: var(--color-heading);
+  }
+
+  .container {
+    padding: var(--desktop-page-padding);
+  }
+
+  footer {
+    padding-bottom: 30px;
+  }
 }

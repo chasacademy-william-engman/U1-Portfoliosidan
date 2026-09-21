@@ -20,7 +20,7 @@
 
 .hero-text {
     width: 50%;
-    color: var(--color-dark)
+    color: var(--color-dark);
 }
 
 .logo-image {
@@ -37,4 +37,35 @@
     }
 }
 
+/* desktop */
+@media (min-width: 1024px) {
+    .hero-text {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+    }
+
+    .hero-title {
+        width: auto;
+        margin-top: 0;
+
+    }
+
+    .logo-image {
+        width: 220px;
+        margin-top: 0;
+    }
+
+
+    .hero {
+        width: 100%;
+    }
+
+    main {
+        flex: 1;
+        display: flex;
+        align-items: center;
+    }
+}
 
