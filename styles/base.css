@@ -24,7 +24,9 @@
   /* Layout */
   --mobile-page-padding: 24px;
   --desktop-page-padding: 30px 100px;
-  --margin-nav-to-title: 25px 0px;
+  --title-padding: 25px;
+  --mobile-padding-nav-to-title: 60px;
+  --desktop-padding-nav-to-title: 80px;
 
   /* Gradients */
   --gradient-360: linear-gradient(
@@ -50,8 +52,12 @@ a {
     color: var(--color-dark)
 }
 
+.title-h1 {
+  padding-top: var(--mobile-padding-nav-to-title);
+}
+
 .title {
-    padding-top: 25px;
+    padding-top: var(--title-padding);
 }
 
 h1, 
@@ -86,6 +92,7 @@ header {
 
 footer {
   text-align: center;
+  height: 1px;
 
   p {
     padding: 0px;
@@ -212,5 +219,9 @@ nav ul {
 
   footer {
     padding-bottom: 30px;
+  }
+
+  .title-h1 {
+    padding-top: var(--desktop-padding-nav-to-title);
   }
 }

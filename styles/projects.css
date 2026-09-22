@@ -7,9 +7,8 @@ p {
     font-size: 12px;
 }
 
-.tech-stack {
-    color: black;
-    padding: 15px 0px;
+.text-below-h1 {
+    display: none;
 }
 
 section a {
@@ -23,6 +22,8 @@ section a {
 }
 
 .project-card {
+    display: flex;
+    flex-direction: column;
     box-shadow: 5px 10px 10px 0px rgb(201, 201, 201);
     border-radius: 12px;
     overflow: hidden;
@@ -36,10 +37,61 @@ section a {
 }
 
 .info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     padding: 15px;
+}
+
+.description {
+    flex: 1;
+    min-height: 0;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 6;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+}
+
+.tech-stack {
+    padding: 10px 0;
 }
 
 .links {
     display: flex;
     justify-content: space-between;
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+    .project-card {
+        margin-top: 80px;
+        height: 380px;
+    }
+
+    .text-below-h1 {
+        display: block;
+        padding-top: 10px;
+    }
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .card-logo {
+        height: 170px;
+    }
+
+    h2 {
+        color: black;
+        padding-bottom: 5px;
+    }
+
+    .tech-stack {
+        color: var(--color-heading);
+    }
+
 }
