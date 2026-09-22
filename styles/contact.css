@@ -3,6 +3,14 @@ address {
   text-align: center;
 }
 
+.address-mobile {
+    display: block;
+}
+
+.address-desktop {
+    display: none;
+}
+
 .title-address {
     margin: 90px 0px 15px;
     font-size: 15px;
@@ -18,4 +26,22 @@ address {
 
     color: transparent;
     -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 1024px) {
+    .address-mobile {
+        display: none;
+    }
+
+    .address-desktop {
+        display: block;
+    }
+
+    .title-address-desktop {
+        margin: 90px 0px 5px;
+    }
+
+    .email {
+        font-size: 20px;
+    }
 }
