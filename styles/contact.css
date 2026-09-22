@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 address {
   font-style: normal;
   text-align: center;
@@ -13,7 +17,7 @@ address {
 
 .title-address {
     margin: 90px 0px 15px;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .gradient {
@@ -28,6 +32,7 @@ address {
     -webkit-text-fill-color: transparent;
 }
 
+/* desktop */
 @media (min-width: 1024px) {
     .address-mobile {
         display: none;
@@ -38,7 +43,7 @@ address {
     }
 
     .title-address-desktop {
-        margin: 90px 0px 5px;
+        margin: 150px 0px 5px;
     }
 
     .email {

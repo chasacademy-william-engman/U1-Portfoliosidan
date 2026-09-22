@@ -18,14 +18,14 @@
   --color-content-light: #a7a7a7;
   --color-dark-mode: #191919;
 
-  --color-button-text: #018c0f;
+  --color-button-text: #005408;
   --color-button-success: #d7ffe0;
 
   /* Layout */
   --mobile-page-padding: 24px;
   --desktop-page-padding: 30px 100px;
   --title-padding: 25px;
-  --mobile-padding-nav-to-title: 60px;
+  --mobile-padding-nav-to-title: 50px;
   --desktop-padding-nav-to-title: 80px;
 
   /* Gradients */
