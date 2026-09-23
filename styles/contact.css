@@ -1,49 +1,51 @@
 /* Mobile styles */
-address, .title-address, .title-address-desktop {
+address,
+.title-address,
+.title-address-desktop {
   font-style: normal;
   text-align: center;
 }
 
 .address-mobile {
-    display: block;
+  display: block;
 }
 
 .address-desktop {
-    display: none;
+  display: none;
 }
 
 .title-address {
-    margin: 90px 0px 15px;
-    font-size: 16px;
+  margin: 90px 0px 15px;
+  font-size: 16px;
 }
 
 .gradient {
-    font-weight: 700;
-    font-size: 19px;
+  font-weight: 700;
+  font-size: 19px;
 
-    background: var(--gradient-heading);
-    background-clip: text;
-    -webkit-background-clip: text;
+  background: var(--gradient-heading);
+  background-clip: text;
+  -webkit-background-clip: text;
 
-    color: transparent;
-    -webkit-text-fill-color: transparent;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 /* desktop */
 @media (min-width: 1024px) {
-    .address-mobile {
-        display: none;
-    }
+  .address-mobile {
+    display: none;
+  }
 
-    .address-desktop {
-        display: block;
-    }
+  .address-desktop {
+    display: block;
+  }
 
-    .title-address-desktop {
-        margin: 150px 0px 5px;
-    }
+  .title-address-desktop {
+    margin: 150px 0px 5px;
+  }
 
-    .email {
-        font-size: 20px;
-    }
+  .email {
+    font-size: 20px;
+  }
 }

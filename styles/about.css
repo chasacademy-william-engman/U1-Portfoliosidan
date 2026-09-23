@@ -1,50 +1,50 @@
 /* Mobile styles */
 .about-text {
-    padding-top: 25px;
+  padding-top: 25px;
 }
 
 h2 {
-    padding-bottom: 25px;
+  padding-bottom: 25px;
 }
 
 .career {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 8px 16px;
-    align-items: start;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px 16px;
+  align-items: start;
 
-    p,
-    .career-date {
-        font-size: 12px;
-    }
+  p,
+  .career-date {
+    font-size: 12px;
+  }
 }
 
 .career-list {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .career-type {
-    justify-self: end;
-    align-self: center;
-    color: var(--color-button-text);
-    background-color: var(--color-button-success);
-    border-radius: 25px;
-    font-size: 10px;
-    padding: 4px 10px;
-    border: 0px;
+  justify-self: end;
+  align-self: center;
+  color: var(--color-button-text);
+  background-color: var(--color-button-success);
+  border-radius: 25px;
+  font-size: 10px;
+  padding: 4px 10px;
+  border: 0px;
 }
 
 .career hr {
-    margin-top: 10px;
-    grid-column: 1 / -1;
-    width: 100%;
+  margin-top: 10px;
+  grid-column: 1 / -1;
+  width: 100%;
 }
 
 /* desktop */
 @media (min-width: 1024px) {
-    main {
-        width: 50%;
-    }
+  main {
+    width: 50%;
+  }
 }
