@@ -1,3 +1,4 @@
+/* Mobile styles */
 .mobile {
     display: block;
 }
@@ -16,12 +17,12 @@ h2 {
 
 .tech-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 100px);
+    justify-content: space-between;  
     gap: 35px;
     
     img {
         width: 100%;
-        max-width: 100px;
     }
 }
 
@@ -40,18 +41,7 @@ h2 {
     }
     
     .tech-grid {
-        grid-template-columns: repeat(5, 1fr);
-        gap: 35px;
+        grid-template-columns: repeat(5, 100px);
         padding-top: var(--desktop-padding-nav-to-title);
-    }
-
-    .icon {
-        box-sizing: border-box;
-        max-width: 105px;
-
-        p {
-            padding-bottom: 5px;
-            text-align: center;
-        }
     }
 }

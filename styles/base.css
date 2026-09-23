@@ -6,20 +6,26 @@
 
 :root {
   /* Colors */
-  --color-heading: #42446e;
+  color-scheme: light dark;
+  
   --gradient-heading: linear-gradient(
     90deg,
     #13b0f5 0%,
     #e70faa 100%
   );
 
-  --color-content-dark: #666666;
+  /* Colors */
+  --color-bg: #ffffff;
+  --color-heading: #42446e;
+  --color-text: #666666;
   --color-heading-dark-mode: #cccccc;
-  --color-content-light: #a7a7a7;
-  --color-dark-mode: #191919;
+  --color-h2-projects: #000000;
 
   --color-button-text: #005408;
   --color-button-success: #d7ffe0;
+  
+  --project-card-background: #ffffff;
+  --project-card-shadow: #e2e2e2;
 
   /* Layout */
   --mobile-page-padding: 24px;
@@ -39,9 +45,30 @@
   --nav-fontsize: 22px;
 }
 
-/* Mobile styles */
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Colors */
+    --color-bg: #191919;
+    --color-heading: #D9D9D9;
+    --color-text: #a7a7a7;
+    --color-text-muted: #a7a7a7;
+    --color-card: #363636;
+    --color-h2-projects: var(--color-text);
 
+    --project-card-background: #363636;
+    --project-card-shadow: none;
+  }
+
+  /* Makes dark icons lighter (black icons become white icons) */
+  .icon-invert {
+    filter: invert(1);
+  }
+}
+
+/* Mobile styles */
 body {
+  background-color: var(--color-bg);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -49,7 +76,8 @@ body {
 }
 
 a {
-    color: var(--color-dark)
+    color: var(--color-text);
+    text-decoration: none;
 }
 
 .title-h1 {
@@ -60,7 +88,7 @@ a {
     padding-top: var(--title-padding);
 }
 
-h1, 
+h1,
 h2
 {
   font-size: 21px;
@@ -69,12 +97,13 @@ h2
 
 h3 {
   font-size: 15px;
-  color: var(--color-content-dark);
+  color: var(--color-text);
+  font-weight: 400;
   line-height: 1.5;
 }
 
 p, .career-date {
-  color: var(--color-content-dark);
+  color: var(--color-text);
 }
 
 .container {
@@ -96,7 +125,7 @@ footer {
 
   text-align: center;
   padding: 10px 0;
-  background: white;
+  background: var(--color-bg);
 
   p {
     padding: 0px;
@@ -158,11 +187,6 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    a {
-        color: black;
-        text-decoration: none;
-    }
 }
 
 .socials {

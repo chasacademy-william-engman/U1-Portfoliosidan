@@ -1,5 +1,6 @@
+/* Mobile styles */
 .hero-title {
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .hero-title .gradient-text {
@@ -49,7 +50,7 @@
     .hero-title {
         width: auto;
         margin-top: 0;
-
+        font-size: 40px;
     }
 
     .logo-image {
