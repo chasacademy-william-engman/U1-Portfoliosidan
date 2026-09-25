@@ -15,7 +15,7 @@
   --color-text: #666666;
   --color-heading-dark-mode: #cccccc;
   --color-h2-projects: #000000;
-  --color-link: var(--color-text);
+  --color-link: #000000;
 
   --color-button-text: #005408;
   --color-button-success: #d7ffe0;
@@ -49,8 +49,7 @@
     --color-text-muted: #a7a7a7;
     --color-card: #363636;
     --color-h2-projects: var(--color-text);
-    --color-link-mobile: var(--color-text);
-    --color-link-desktop: var(--color-text);
+    --color-link: var(--color-text);
 
     --project-card-background: #363636;
     --project-card-shadow: none;
@@ -76,7 +75,7 @@ body {
 }
 
 nav a {
-  color: var(--color-link-mobile);
+  color: var(--color-link);
   text-decoration: none;
 }
 
