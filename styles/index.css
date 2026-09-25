@@ -1,8 +1,4 @@
 /* Mobile styles */
-.hero-title {
-  margin-top: 150px;
-}
-
 .hero-title .gradient-text {
   background: linear-gradient(
     90deg,
@@ -39,7 +35,7 @@
 }
 
 /* desktop */
-@media (min-width: 1024px) {
+@media (min-width: 1270px) {
   .hero-text {
     width: 100%;
     display: grid;
@@ -47,14 +43,8 @@
     align-items: center;
   }
 
-  .hero-title {
-    width: auto;
-    margin-top: 0;
-    font-size: 40px;
-  }
-
   .logo-image {
-    width: 220px;
+    width: 349px;
     margin-top: 0;
   }
 
@@ -66,5 +56,10 @@
     flex: 1;
     display: flex;
     align-items: center;
+  }
+
+  .hero-title {
+    width: auto;
+    margin-top: 0;
   }
 }

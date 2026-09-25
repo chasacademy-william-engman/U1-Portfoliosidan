@@ -14,25 +14,27 @@ address,
   display: none;
 }
 
+.hero-title {
+  display: none;
+}
+
 .title-address {
   margin: 90px 0px 15px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .gradient {
-  font-weight: 700;
-  font-size: 19px;
-
   background: var(--gradient-heading);
   background-clip: text;
   -webkit-background-clip: text;
 
   color: transparent;
   -webkit-text-fill-color: transparent;
+  overflow-wrap: anywhere;
 }
 
 /* desktop */
-@media (min-width: 1024px) {
+@media (min-width: 1270px) {
   .address-mobile {
     display: none;
   }
@@ -41,11 +43,12 @@ address,
     display: block;
   }
 
-  .title-address-desktop {
-    margin: 150px 0px 5px;
+  .hero-title {
+    display: block;
+    text-align: center;
   }
 
-  .email {
-    font-size: 20px;
+  .gradient {
+    margin-top: 0;
   }
 }
