@@ -16,12 +16,11 @@
 }
 
 .hero-text {
-  width: 50%;
   color: var(--color-dark);
 }
 
 .logo-image {
-  width: 215px;
+  width: 270px;
   padding: 4px;
   border-radius: 50%;
   background: var(--gradient-360);

@@ -10,6 +10,11 @@ address,
   display: block;
 }
 
+.address-mobile a {
+  display: block;
+  font-size: 18px;
+}
+
 .address-desktop {
   display: none;
 }
@@ -20,7 +25,7 @@ address,
 
 .title-address {
   margin: 90px 0px 15px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .gradient {
